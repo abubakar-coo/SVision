@@ -756,21 +756,18 @@
                 <div class="heading">
                     <h6>Get in touch</h6>
                     <h2>Get a Free Consultation Now</h2>
-                    <form action="https://formsubmit.co/abubakararif164@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="New Consultation Request from SVision Website">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+                    <form class="js-contact-form" method="POST" data-form-name="Home Consultation">
                         <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                            <input type="text" class="form-control" name="name" placeholder="Name" required>
                         </div>
                         <div class="form-group">
-                          <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
+                          <input type="text" class="form-control" name="phone" placeholder="Phone">
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          <input type="email" class="form-control" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="comments" id="comments" rows="3" placeholder="Message"></textarea>
+                            <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary default-btn hover-effect">Send Now</button>
                     </form>
@@ -854,6 +851,7 @@
 <script src="assets/js/animation.js"></script>
 <script src="assets/js/search.js"></script>
 <script src="assets/js/scroll-buttons.js"></script>
+<script src="assets/js/form-submit.js"></script>
 </body>
 </html>
 
