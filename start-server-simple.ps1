@@ -1,38 +1,21 @@
 param(
-    [int]$Port = 8000,
-    [string]$HostName = 'localhost',
-    [string]$Root = $PSScriptRoot
+    [int]$Port = 8000
 )
 
-$listener = New-Object System.Net.HttpListener
-$started = $false
-$attempts = 20
+$Root = $PSScriptRoot
 
-for ($i = 0; $i -lt $attempts; $i++) {
-    $url = "http://${HostName}:${Port}/"
-    $listener.Prefixes.Clear()
-    $listener.Prefixes.Add($url)
-    try {
-        $listener.Start()
-        $started = $true
-        break
-    } catch [System.Net.HttpListenerException] {
-        Write-Host "Port $Port unavailable (in use or URL ACL conflict). Trying next..." -ForegroundColor Yellow
-        $Port++
-    }
-}
-
-if (-not $started) {
-    Write-Error "Could not start server. Try running as admin or use a different port."
-    exit 1
-}
-
-Write-Host "Starting server at $url" -ForegroundColor Green
+Write-Host "Starting server on http://localhost:$Port" -ForegroundColor Green
 Write-Host "Press Ctrl+C to stop" -ForegroundColor Yellow
+Write-Host ""
 
-Start-Process $url
+$listener = New-Object System.Net.HttpListener
+$listener.Prefixes.Add("http://localhost:$Port/")
 
 try {
+    $listener.Start()
+    Write-Host "Server started successfully!" -ForegroundColor Green
+    Start-Process "http://localhost:$Port"
+    
     while ($listener.IsListening) {
         $context = $listener.GetContext()
         $request = $context.Request
@@ -62,6 +45,9 @@ try {
                 '.gif'  { 'image/gif' }
                 '.svg'  { 'image/svg+xml' }
                 '.json' { 'application/json' }
+                '.xml'  { 'application/xml' }
+                '.woff' { 'font/woff' }
+                '.woff2' { 'font/woff2' }
                 default { 'application/octet-stream' }
             }
             
@@ -78,6 +64,13 @@ try {
         $response.Close()
     }
 }
+catch {
+    Write-Host "Error: $_" -ForegroundColor Red
+    Write-Host "Make sure you're running as Administrator or try a different port." -ForegroundColor Yellow
+}
 finally {
-    try { if ($listener.IsListening) { $listener.Stop() } } catch {}
+    if ($listener) {
+        $listener.Stop()
+        $listener.Dispose()
+    }
 }
