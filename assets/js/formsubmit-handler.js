@@ -1,28 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const forms = document.querySelectorAll("form[data-formsubmit='true']");
 
-  if (!forms.length) {
-    return;
-  }
-
   forms.forEach((form) => {
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
 
+      const formData = new FormData(form);
       const submitButton = form.querySelector('button[type="submit"]');
-      const originalButtonContent = submitButton ? submitButton.innerHTML : "";
-      const formName = form.dataset.formName || "Website Form";
-      const action = form.getAttribute("action") || "";
+      const originalText = submitButton ? submitButton.innerHTML : "";
+      const actionUrl = form.getAttribute("action");
 
-      if (!action.includes("formsubmit.co/")) {
-        console.warn("FormSubmit handler: invalid action URL", action);
-        form.submit(); // fallback
+      if (!actionUrl) {
+        console.warn("FormSubmit handler: form has no action attribute");
         return;
       }
-
-      const ajaxEndpoint = action.replace("formsubmit.co/", "formsubmit.co/ajax/");
-      const formData = new FormData(form);
-      formData.append("formName", formName);
 
       if (submitButton) {
         submitButton.disabled = true;
@@ -30,36 +21,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       try {
-        const response = await fetch(ajaxEndpoint, {
+        await fetch(actionUrl, {
           method: "POST",
-          headers: {
-            Accept: "application/json",
-          },
           body: formData,
+          mode: "no-cors",
         });
-
-        if (!response.ok) {
-          const text = await response.text();
-          throw new Error(`Request failed with status ${response.status}: ${text}`);
-        }
-
-        // Attempt to parse JSON, but it may not always be JSON on free plan
-        try {
-          await response.json();
-        } catch (_) {
-          // ignore parsing errors and proceed
-        }
 
         alert("Message sent successfully!");
         form.reset();
       } catch (error) {
-        console.error("FormSubmit AJAX submission failed, falling back.", error);
-        // As a fallback, submit the form normally (will navigate away)
-        form.submit();
+        console.error("FormSubmit request failed:", error);
+        alert("Something went wrong. Please try again later.");
       } finally {
         if (submitButton) {
           submitButton.disabled = false;
-          submitButton.innerHTML = originalButtonContent;
+          submitButton.innerHTML = originalText;
         }
       }
     });
