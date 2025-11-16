@@ -1,3 +1,12 @@
+/* Why Choose Us heading color */
+.heading h6 {
+	color: #8ca6a2 !important;
+}
+/* Why Choose Us box hover color */
+.choose-box:hover {
+	background: #C9c8c5 !important;
+	transition: background 0.3s;
+}
 body {
 	margin:0;
 	padding:0;
@@ -752,7 +761,7 @@ a.item-link{margin-top: 20px; display: inline-block}
 	align-items: center;
 	justify-content: center;
 	padding: 14px 32px;
-	background: linear-gradient(135deg, #816aff 0%, #6b43f8 100%);
+	background: #8ca6a2 !important;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 16px;
@@ -761,7 +770,7 @@ a.item-link{margin-top: 20px; display: inline-block}
 	transition: all 0.3s ease;
 	position: relative;
 	overflow: hidden;
-	box-shadow: 0 4px 15px rgba(129, 106, 255, 0.4);
+	box-shadow: 0 4px 15px rgba(140, 166, 162, 0.4) !important;
 	animation: pulse-btn 2s infinite;
 	white-space: nowrap;
 }
@@ -771,7 +780,7 @@ a.item-link{margin-top: 20px; display: inline-block}
 	position: absolute;
 	top: 0;
 	left: -100%;
-	width: 100%;
+	background: #8ca6a2;
 	height: 100%;
 	background: linear-gradient(135deg, #6b43f8 0%, #5a2de8 100%);
 	transition: left 0.3s ease;
@@ -779,17 +788,19 @@ a.item-link{margin-top: 20px; display: inline-block}
 }
 
 .contact-us-btn:hover {
+	background: #C9c8c5 !important;
 	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(129, 106, 255, 0.6);
+	box-shadow: 0 6px 20px rgba(201, 200, 197, 0.6) !important;
 	animation: none;
 	color: #ffffff;
 }
 
 .contact-us-btn:hover::before {
-	left: 0;
-}
-
-.contact-us-btn .btn-text {
+	background: #C9c8c5;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(201, 200, 197, 0.6);
+	animation: none;
+	color: #ffffff;
 	position: relative;
 	z-index: 1;
 }
@@ -814,6 +825,45 @@ a.item-link{margin-top: 20px; display: inline-block}
 		margin-left: 0;
 		margin-top: 10px;
 	}
+}
+
+/* Mission Section background color */
+.mission-section {
+    background: #8ca6a2 !important;
+}
+
+/* Checkmark color for list items */
+.heading ul li i.fa-check {
+    color: #C9c8c5 !important;
+}
+
+/* Read More button colors */
+.default-btn {
+    background: #C9c8c5 !important;
+    border: 1px solid #C9c8c5 !important;
+    color: #000000 !important;
+    box-shadow: 0px 4px 22px 0px rgba(201, 200, 197, 0.6) !important;
+}
+
+.default-btn:hover {
+    background: #8ca6a2 !important;
+    border: 1px solid #8ca6a2 !important;
+    color: #ffffff !important;
+    box-shadow: 0px 4px 22px 0px rgba(140, 166, 162, 0.6) !important;
+}
+
+/* Navbar links color scheme */
+.navbar .nav-link {
+    color: #000000 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #C9c8c5 !important;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: #8ca6a2 !important;
 }
 
 /* Ensure no underline appears on navbar links or contact button on hover */
@@ -928,5 +978,21 @@ a.item-link{margin-top: 20px; display: inline-block}
 
 .modal .close:hover {
 	opacity: 1;
+}
+
+/* Testimonials carousel dots color - only active dot */
+.testimonials-section .owl-carousel .owl-dots .owl-dot.active span {
+	background: #C9c8c5 !important;
+}
+
+/* Testimonials carousel dots color - hover state */
+.testimonials-section .owl-carousel .owl-dots .owl-dot:hover span {
+	background: #C9c8c5 !important;
+}
+
+/* Breadcrumb link color */
+.breadcrumb ol li a,
+.breadcrumb ul li a {
+	color: #C9c8c5 !important;
 }
 
