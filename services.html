@@ -402,7 +402,7 @@
                 <div class="heading">
                     <h6>Get in touch</h6>
                     <h2>Get a Free Consultation Now</h2>
-                    <form action="https://getform.io/f/awnylqvb" method="POST" data-formsubmit="true" data-form-name="Services Inquiry" onsubmit="event.preventDefault(); (async function(form){ try{ const res = await fetch('https://getform.io/f/awnylqvb',{method:'POST', body: new FormData(form)}); alert('Thank you! Your message has been sent successfully. We will get back to you as soon as possible.'); form.reset(); } catch(err){ alert('Submission sent (may take a moment to process).'); form.reset(); } })(this); return false;">
+                    <form action="https://getform.io/f/awnylqvb" method="POST" data-formsubmit="true" data-form-name="Services Inquiry" onsubmit="(async function(form){ try{ await fetch('https://getform.io/f/awnylqvb',{method:'POST', body: new FormData(form)}); form.reset(); } catch(err){ form.reset(); } })(this);">
                         <div class="form-group">
                             <input type="text" class="form-control" name="name" placeholder="Name" required>
                         </div>
