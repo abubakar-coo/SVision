@@ -816,6 +816,15 @@ a.item-link{margin-top: 20px; display: inline-block}
 	}
 }
 
+/* Ensure no underline appears on navbar links or contact button on hover */
+.navbar .nav-link,
+.navbar .nav-link:hover,
+.navbar .login-outer-div .contact-us-btn,
+.navbar .login-outer-div .contact-us-btn:hover,
+.navbar .login-outer-div .contact-us-btn .btn-text {
+    text-decoration: none !important;
+}
+
 /* Gallery Animation */
 .gallery-animate {
 	transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
