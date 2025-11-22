@@ -1,0 +1,12 @@
+{
+  "name": "svision",
+  "version": "1.0.0",
+  "description": "SVision website with form server",
+  "main": "form-server.js",
+  "scripts": {
+    "start": "node form-server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
