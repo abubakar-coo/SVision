@@ -3,43 +3,7 @@
 	color: #8ca6a2 !important;
 }
 
-/* Why Choose Us box hover color */
-.choose-box:hover {
-	background: #c6c5c2 !important;
-	transition: background 0.3s;
-}
 
-body {
-	margin: 0;
-	padding: 0;
-	background: repeat-x top #fff;
-}
-
-:root {
-	--e-global-color-primary: #1f242e;
-	--e-global-color-secondary: #816aff;
-	--e-global-color-text: #727272;
-	--e-global-color-accent: #816aff;
-	--e-global-color-light-blue: #40d8fd;
-	--e-global-color-white: #ffffff;
-	--e-global-color-bright-blue: #6b43f8;
-	--e-global-color-dark-blue: #20253e;
-	--e-global-color-yellow: #f1c337;
-	--e-global-color-desaturated-blue: #2e2e4f;
-	--e-global-color-very-pale: #effcff;
-	--e-global-color-grayish-blue: #222733;
-	--e-global-color-dark-gray: #7b7e80;
-	--e-global-color-grayish-cyan: #c3e6ee;
-	--e-global-color-black: #000000;
-	--e-global-color-dark-grayish-blue: #2a333e;
-	--e-global-color-light-grayish-blue: #b1bdcb;
-}
-
-a {
-	outline: none;
-	color: #dddddd;
-	text-decoration: none;
-}
 
 /**************************************************
 =-*=-*=-*=-*=-*=-*= Single Post =-*=-*=-*=-*=-*=-*=

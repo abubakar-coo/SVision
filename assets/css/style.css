@@ -227,6 +227,11 @@ a:hover .cursor::after {
 
 .main-header {
     padding: 41px 107px 0;
+    background: transparent;
+}
+
+.header {
+    background: transparent;
 }
 
 .navbar .navbar-brand {
@@ -421,7 +426,7 @@ a:hover .cursor::after {
 /*-------- BANNER ------------ */
 
 .banner-section-outer {
-    background: var(--e-global-color-very-pale);
+    background: #8ca6a2;
 }
 
 .home-banner-section {
@@ -604,7 +609,7 @@ a:hover .cursor::after {
 }
 
 .choose-section .choose-box:hover {
-    background-color: var(--e-global-color-light-blue);
+    background-color: #c6c5c2;
 }
 
 .choose-section .choose-box:hover h4 {
