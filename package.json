@@ -1,12 +1,11 @@
 {
   "name": "svision",
   "version": "1.0.0",
-  "description": "SVision website with form server",
-  "main": "form-server.js",
+  "description": "SVision Digital Marketing Agency Website",
   "scripts": {
-    "start": "node form-server.js"
+    "start": "npx serve -l 8000"
   },
-  "author": "",
+  "author": "SVision",
   "license": "ISC",
   "dependencies": {}
 }

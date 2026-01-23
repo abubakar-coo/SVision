@@ -153,6 +153,9 @@
     .footer-section .section-left-shape img{
         width: 145px;
     }
+    .footer-section .section-right-shape img{
+        width: 145px;
+    }
 
     .banner-section-outer2 .main-header {
         padding: 35px 30px 0;
@@ -707,6 +710,9 @@
         padding: 100px 0;
     }
     .footer-section .section-left-shape img {
+        width: 110px;
+    }
+    .footer-section .section-right-shape img {
         width: 110px;
     }
     .footer-section .footer-links-content {
@@ -1834,6 +1840,9 @@
         padding: 70px 0;
     }
     .footer-section .section-left-shape img {
+        width: 95px;
+    }
+    .footer-section .section-right-shape img {
         width: 95px;
     }
     .footer-section h5 {

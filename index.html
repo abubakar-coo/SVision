@@ -5,23 +5,17 @@
     <title>SVision - Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <!-- Favicon - Responsive -->
+    <link rel="icon" type="image/png" href="assets/images/main-favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/main-favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/main-favicon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/main-favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/main-favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/main-favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/main-favicon.png">
+    <meta name="msapplication-TileColor" content="#8ca6a2">
+    <meta name="msapplication-TileImage" content="assets/images/main-favicon.png">
+    <meta name="theme-color" content="#8ca6a2">
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -195,13 +189,9 @@
                         <figure class="create-img-1 position-relative mb-0" style="width: 100%; display: block; z-index: 1;">
                             <img class="img-fluid" src="assets/images/create-section-img-1.jpg" alt="About Us" style="width: 70%; height: auto; display: block; max-width: 500px;">
                         </figure>
-                        <div class="video-outer text-right" style="z-index: 2;">
-                            <a href="javascript:void(0)" data-toggle="modal" data-target="#videoModal">
-                                <figure class="mb-0">
-                                    <img class="thumb" style="cursor: pointer; width: 100%; max-width: 600px; height: auto;" src="assets/images/video-background-img.jpg" alt="Video">
-                                </figure>
-                            </a>
-                        </div>
+                        <figure class="mb-0" style="z-index: 2; margin-top: -160px; text-align: right; margin-right: 18px;">
+                            <img class="img-fluid" src="assets/images/video-background-img.jpg" alt="About Us" style="width: 100%; max-width: 600px; height: auto;">
+                        </figure>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-12 col-12 d-flex align-items-center text-left order-md-2 order-1">
@@ -742,9 +732,11 @@
                     <div class="heading">
                         <h6>Get in touch</h6>
                         <h2>Get a Free Consultation Now</h2>
-                        <form action="https://getform.io/f/awnylqvb" method="POST" data-formsubmit="true"
-                            data-form-name="Home Consultation"
-                            onsubmit="(async function(form){ try{ await fetch('https://getform.io/f/awnylqvb',{method:'POST', body: new FormData(form)}); form.reset(); } catch(err){ form.reset(); } })(this);">
+                        <form action="https://formsubmit.co/svision.officialinfo@gmail.com" method="POST" data-formsubmit="true"
+                            data-form-name="Home Consultation">
+                            <input type="hidden" name="_subject" value="New Home Consultation Inquiry - SVision">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" placeholder="Name" required>
                             </div>
@@ -770,15 +762,16 @@
         <figure class="section-left-shape position-absolute mb-0 shape2">
             <img class="img-fluid" src="assets/images/footer-shape-1.png" alt="">
         </figure>
+        <figure class="section-right-shape position-absolute mb-0">
+            <img class="img-fluid" src="assets/images/footer-shape-2.png" alt="">
+        </figure>
         <div class="container">
             <div class="row">
                 <div class="col-xl-1 col-lg-1 col-md-1 d-md-block d-none"></div>
                 <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4 text-sm-left text-center">
                     <div class="footer-logo-content">
-                        <a href="index.html">
-                            <figure class="footer-logo mb-0">
-                                <img class="img-fluid" src="assets/images/footer-logo.svg" alt="SVision">
-                            </figure>
+                        <a href="index.html" class="sv-brittany" style="font-size: 36px; color: #ffffff; text-decoration: none;">
+                            SVision
                         </a>
                     </div>
                 </div>
@@ -816,9 +809,6 @@
                         </ul>
                     </div>
                 </div>
-                <figure class="section-right-shape position-absolute mb-0">
-                    <img class="img-fluid" src="assets/images/footer-shape-2.png" alt="">
-                </figure>
             </div>
         </div>
     </section>
@@ -827,30 +817,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="mb-0">SVision copyright © 2025. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- VIDEO MODAL -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body p-0">
-                    <div class="embed-responsive embed-responsive-16by9"
-                        style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-                        <iframe id="videoFrame" class="embed-responsive-item"
-                            src="https://drive.google.com/file/d/1Jqua_gwRn6mhmFSvp7PSMKTr5HSnZd74/preview"
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                            allowfullscreen=""
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            loading="lazy"></iframe>
-                    </div>
+                    <p class="mb-0">SVision copyright © 2026. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
@@ -858,8 +825,6 @@
     <script src="assets/js/jquery-3.6.0.min.js"> </script>
     <script src="assets/js/popper.min.js"> </script>
     <script src="assets/js/bootstrap.min.js"> </script>
-    <script src="assets/js/video-popup.js"></script>
-    <script src="assets/js/video-section.js"></script>
     <script src="assets/js/counter-script.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/custom-carousel.js"></script>
@@ -867,19 +832,6 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/scroll-buttons.js"></script>
     <script src="assets/js/formsubmit-handler.js"></script>
-    <script>
-        // Video modal handler - just for cleanup
-        // Ensure jQuery is loaded before running this
-        $(document).ready(function () {
-            $('#videoModal').on('hide.bs.modal', function (e) {
-                // Pause video when modal closes
-                var $frame = $('#videoFrame');
-                if ($frame.length) {
-                    $frame.attr('src', $frame.attr('src'));
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

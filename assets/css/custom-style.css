@@ -894,9 +894,9 @@ a.item-link {
 	align-items: center;
 	justify-content: center;
 	padding: 14px 32px;
-	background: #8ca6a2 !important;
+	background: #c9c8c5 !important;
 	color: #ffffff;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 16px;
 	border-radius: 50px;
 	text-decoration: none;
@@ -913,25 +913,25 @@ a.item-link {
 	position: absolute;
 	top: 0;
 	left: -100%;
-	background: #8ca6a2;
+	background: #c9c8c5;
 	height: 100%;
-	background: linear-gradient(135deg, #6b43f8 0%, #5a2de8 100%);
+	background: linear-gradient(135deg, #c9c8c5 0%, #b5b4b1 100%);
 	transition: left 0.3s ease;
 	z-index: -1;
 }
 
 .contact-us-btn:hover {
-	background: #c6c5c2 !important;
+	background: #8d8c89 !important;
 	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(201, 200, 197, 0.6) !important;
+	box-shadow: 0 6px 20px rgba(141, 140, 137, 0.6) !important;
 	animation: none;
 	color: #ffffff;
 }
 
 .contact-us-btn:hover::before {
-	background: #c6c5c2;
+	background: #8d8c89;
 	transform: translateY(-2px);
-	box-shadow: 0 6px 20px rgba(201, 200, 197, 0.6);
+	box-shadow: 0 6px 20px rgba(141, 140, 137, 0.6);
 	animation: none;
 	color: #ffffff;
 	position: relative;
@@ -982,10 +982,10 @@ a.item-link {
 }
 
 .default-btn:hover {
-	background: #8ca6a2 !important;
-	border: 1px solid #8ca6a2 !important;
+	background: #8d8c89 !important;
+	border: 1px solid #8d8c89 !important;
 	color: #ffffff !important;
-	box-shadow: 0px 4px 22px 0px rgba(140, 166, 162, 0.6) !important;
+	box-shadow: 0px 4px 22px 0px rgba(141, 140, 137, 0.6) !important;
 }
 
 /* Navbar links color scheme */
@@ -999,7 +999,7 @@ a.item-link {
 }
 
 .navbar .nav-item.active .nav-link {
-	color: #8ca6a2 !important;
+	color: #c6c5c2 !important;
 }
 
 /* Ensure no underline appears on navbar links or contact button on hover */
