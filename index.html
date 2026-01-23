@@ -86,7 +86,7 @@
         <!-- BANNER -->
         <section class="home-banner-section overflow-hidden position-relative">
             <figure class="banner-shape-1 position-absolute mb-0 shape">
-                <img class="img-fluid" src="assets/images/banner-shape-img-1.png" alt="">
+                <img class="img-fluid" loading="lazy" src="assets/images/banner-shape-img-1.png" alt="">
             </figure>
             <div class="container-fluid">
                 <div class="row position-relative">
@@ -109,16 +109,16 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 text-md-right text-center">
                         <div class="banner-img-content position-relative">
                             <figure class="banner-background position-absolute mb-0">
-                                <img class="img-fluid" src="assets/images/banner-img-background.png" alt="">
+                                <img class="img-fluid" loading="lazy" src="assets/images/banner-img-background.png" alt="" loading="lazy">
                             </figure>
                             <figure class="banner-shape-2 position-absolute mb-0">
-                                <img class="img-fluid" src="assets/images/banner-shape-img-2.png" alt="">
+                                <img class="img-fluid" loading="lazy" src="assets/images/banner-shape-img-2.png" alt="">
                             </figure>
                             <figure class="banner-shape-3 position-absolute mb-0">
-                                <img class="img-fluid" src="assets/images/banner-shape-img-3.png" alt="">
+                                <img class="img-fluid" loading="lazy" src="assets/images/banner-shape-img-3.png" alt="" loading="lazy">
                             </figure>
                             <figure class="banner-img mb-0" data-wow-duration="2s">
-                                <img class="img-fluid" src="assets/images/banner-img.png" alt="">
+                                <img class="img-fluid" loading="lazy" src="assets/images/banner-img.png" alt="" loading="lazy">
                             </figure>
                         </div>
                     </div>
@@ -129,7 +129,7 @@
     <!-- CHOOSE SECTION -->
     <section class="choose-section text-center position-relative">
         <figure class="shape position-absolute mb-0">
-            <img class="img-fluid" src="assets/images/section-left-shape.png" alt="">
+            <img class="img-fluid" loading="lazy" src="assets/images/section-left-shape.png" alt="">
         </figure>
         <div class="container">
             <div class="row">
@@ -144,7 +144,7 @@
                 <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4">
                     <div class="choose-box hover-effect">
                         <figure>
-                            <img class="img-fluid" src="assets/images/choose-box-img-1.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/choose-box-img-1.png" alt="">
                         </figure>
                         <h4>Trusted Specialists</h4>
                         <p class="text-size-16">We help businesses grow through strategic planning, market analysis,
@@ -155,7 +155,7 @@
                 <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4">
                     <div class="choose-box hover-effect">
                         <figure>
-                            <img class="img-fluid" src="assets/images/choose-box-img-2.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/choose-box-img-2.png" alt="">
                         </figure>
                         <h4>Creative and Proven </h4>
                         <p class="text-size-16">We analyze market trends, audience behavior, and competitor insights to
@@ -166,7 +166,7 @@
                 <div class="col-lg-4 col-sm-6 col-12 mb-lg-0 mb-4">
                     <div class="choose-box hover-effect">
                         <figure>
-                            <img class="img-fluid" src="assets/images/choose-box-img-3.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/choose-box-img-3.png" alt="">
                         </figure>
                         <h4>Business Valuation</h4>
                         <p class="text-size-16">We build strong brand identities and strategies that connect
@@ -180,21 +180,28 @@
     <!-- ABOUT US SECTION -->
     <section class="create-section position-relative">
         <figure class="shape position-absolute mb-0">
-            <img class="img-fluid" src="assets/images/create-section-shape-1.png" alt="">
+            <img class="img-fluid" loading="lazy" src="assets/images/create-section-shape-1.png" alt="">
         </figure>
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 col-lg-7 col-md-12 col-12 order-md-1 order-2">
-                    <div class="create-images position-relative" style="min-height: 400px;">
-                        <figure class="create-img-1 position-relative mb-0" style="width: 100%; display: block; z-index: 1;">
-                            <img class="img-fluid" src="assets/images/create-section-img-1.jpg" alt="About Us" style="width: 70%; height: auto; display: block; max-width: 500px;">
+                <div class="col-xl-7 col-lg-7 col-md-12 col-12 order-lg-1 order-1">
+                    <div class="create-images position-relative" style="min-height: 500px;">
+                        <!-- Main Image -->
+                        <figure class="create-img-1 mb-0" style="position: relative; z-index: 1;">
+                            <img class="img-fluid" loading="lazy" src="assets/images/create-section-img-1.jpg" alt="About Us" style="max-width: 420px; border-radius: 8px;">
                         </figure>
-                        <figure class="mb-0" style="z-index: 2; margin-top: -160px; text-align: right; margin-right: 18px;">
-                            <img class="img-fluid" src="assets/images/video-background-img.jpg" alt="About Us" style="width: 100%; max-width: 600px; height: auto;">
-                        </figure>
+                        <!-- Video Image with Play Button -->
+                        <div class="video-outer position-absolute" style="bottom: 20px; right: 0; z-index: 2;">
+                            <figure class="mb-0 position-relative">
+                                <img class="img-fluid" loading="lazy" src="assets/images/video-background-img.jpg" alt="Video" style="max-width: 380px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                                <a class="popup-vimeo" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70px; height: 70px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+                                    <i class="fa-solid fa-play" style="color: #8ca6a2; font-size: 24px; margin-left: 4px;"></i>
+                                </a>
+                            </figure>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-12 col-12 d-flex align-items-center text-left order-md-2 order-1">
+                <div class="col-xl-5 col-lg-5 col-md-12 col-12 d-flex align-items-center text-left order-lg-2 order-2">
                     <div class="heading" data-aos="fade-right">
                         <h6>About Us</h6>
                         <h2>Design. Develop. Inspire.</h2>
@@ -222,7 +229,7 @@
                             <h4 class="text-white mb-0">01.</h4>
                         </div>
                         <figure class="mb-0">
-                            <img class="img-fluid" src="assets/images/gallery-img-1.jpg" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/gallery-img-1.jpg" alt="">
                         </figure>
                         <div class="content position-absolute">
                             <h4 class="text-white">Inclusivity</h4>
@@ -237,7 +244,7 @@
                             <h4 class="text-white mb-0">02.</h4>
                         </div>
                         <figure class="mb-0">
-                            <img class="img-fluid" src="assets/images/gallery-img-2.jpg" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/gallery-img-2.jpg" alt="">
                         </figure>
                         <div class="content position-absolute">
                             <h4 class="text-white">Collaboration</h4>
@@ -252,7 +259,7 @@
                             <h4 class="text-white mb-0">03.</h4>
                         </div>
                         <figure class="mb-0">
-                            <img class="img-fluid" src="assets/images/gallery-img-3.jpg" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/gallery-img-3.jpg" alt="">
                         </figure>
                         <div class="content position-absolute">
                             <h4 class="text-white">Clarity</h4>
@@ -267,7 +274,7 @@
                             <h4 class="text-white mb-0">04.</h4>
                         </div>
                         <figure class="mb-0">
-                            <img class="img-fluid" src="assets/images/gallery-img-4.jpg" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/gallery-img-4.jpg" alt="">
                         </figure>
                         <div class="content position-absolute">
                             <h4 class="text-white">Honesty</h4>
@@ -296,13 +303,13 @@
                 <div class="col-lg-6 col-md-5 col-12 text-md-right text-center">
                     <div class="create-images position-relative">
                         <figure class="circle position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/blue-dot.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/blue-dot.png" alt="">
                         </figure>
                         <figure class="create-img-1 position-relative mb-0">
-                            <img class="img-fluid" src="assets/images/mission-section-main-img.jpg" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/mission-section-main-img.jpg" alt="">
                         </figure>
                         <figure class="shape-1 shape position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/mission-section-shape-1.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/mission-section-shape-1.png" alt="">
                         </figure>
                     </div>
                 </div>
@@ -312,13 +319,13 @@
                     <div class="col-lg-6 col-md-5 col-12 text-md-left text-center">
                         <div class="create-images position-relative">
                             <figure class="circle-1 position-absolute mb-0">
-                                <img class="img-fluid" src="assets/images/blue-dot.svg" alt="">
+                                <img class="img-fluid" loading="lazy" src="assets/images/blue-dot.svg" alt="">
                             </figure>
                             <figure class="create-img-1 position-relative mb-0">
-                                <img class="img-fluid" src="assets/images/vision-section-main-img.jpg" alt="">
+                                <img class="img-fluid" loading="lazy" src="assets/images/vision-section-main-img.jpg" alt="">
                             </figure>
                             <figure class="shape-2 shape position-absolute mb-0">
-                                <img class="img-fluid" src="assets/images/mission-section-shape-1.png" alt="">
+                                <img class="img-fluid" loading="lazy" src="assets/images/mission-section-shape-1.png" alt="">
                             </figure>
                         </div>
                     </div>
@@ -338,7 +345,7 @@
     <!-- EXPERIENCE SECTION -->
     <section class="experience-section position-relative">
         <figure class="shape position-absolute mb-0">
-            <img class="img-fluid" src="assets/images/section-right-shape.png" alt="">
+            <img class="img-fluid" loading="lazy" src="assets/images/section-right-shape.png" alt="">
         </figure>
         <div class="container">
             <div class="row">
@@ -357,7 +364,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="counter-box">
                                     <figure>
-                                        <img class="img-fluid" src="assets/images/counter-box-img-1.png" alt="">
+                                        <img class="img-fluid" loading="lazy" src="assets/images/counter-box-img-1.png" alt="">
                                     </figure>
                                     <span class="counter">450</span>
                                     <p class="text-size-16 mb-0">Business Ideas</p>
@@ -366,7 +373,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="counter-box">
                                     <figure>
-                                        <img class="img-fluid" src="assets/images/counter-box-img-2.png" alt="">
+                                        <img class="img-fluid" loading="lazy" src="assets/images/counter-box-img-2.png" alt="">
                                     </figure>
                                     <span class="counter">1200</span>
                                     <p class="text-size-16 mb-0">Media Posts</p>
@@ -377,7 +384,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="counter-box">
                                     <figure>
-                                        <img class="img-fluid" src="assets/images/counter-box-img-3.png" alt="">
+                                        <img class="img-fluid" loading="lazy" src="assets/images/counter-box-img-3.png" alt="">
                                     </figure>
                                     <span class="counter">687</span>
                                     <p class="text-size-16 mb-0">Happy Clients</p>
@@ -386,7 +393,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                                 <div class="counter-box">
                                     <figure>
-                                        <img class="img-fluid" src="assets/images/counter-box-img-4.png" alt="">
+                                        <img class="img-fluid" loading="lazy" src="assets/images/counter-box-img-4.png" alt="">
                                     </figure>
                                     <span class="counter">2348</span>
                                     <p class="text-size-16 mb-0">Finished Projects</p>
@@ -401,7 +408,7 @@
     <!-- TEAM SECTION -->
     <section class="team-section text-center position-relative">
         <figure class="shape position-absolute mb-0">
-            <img class="img-fluid" src="assets/images/section-left-shape.png" alt="">
+            <img class="img-fluid" loading="lazy" src="assets/images/section-left-shape.png" alt="">
         </figure>
         <div class="container">
             <div class="row">
@@ -418,7 +425,7 @@
                         <div class="wrapper position-relative">
                             <div class="img-outer">
                                 <figure class="mb-0">
-                                    <img class="img-fluid" src="assets/images/team-box-img-1.jpg" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/team-box-img-1.jpg" alt="">
                                 </figure>
                             </div>
                             <ul class="team-content-listing m-0 position-absolute">
@@ -442,7 +449,7 @@
                         <div class="wrapper position-relative">
                             <div class="img-outer">
                                 <figure class="mb-0">
-                                    <img class="img-fluid" src="assets/images/team-box-img-2.jpg" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/team-box-img-2.jpg" alt="">
                                 </figure>
                             </div>
                             <ul class="team-content-listing m-0 position-absolute">
@@ -454,7 +461,7 @@
                                             class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                        <h4>Abubakar Arif</h4>
+                        <h4>Hassan</h4>
                         <p class="text-size-16">Founder</p>
                         <a href="./index2.html">
                             <i class="fa-solid fa-arrow-right"></i>
@@ -466,7 +473,7 @@
                         <div class="wrapper position-relative">
                             <div class="img-outer">
                                 <figure class="mb-0">
-                                    <img class="img-fluid" src="assets/images/team-box-img-3.jpg" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/team-box-img-3.jpg" alt="">
                                 </figure>
                             </div>
                             <ul class="team-content-listing m-0 position-absolute">
@@ -514,14 +521,14 @@
                                 full of valuable insights for designers. Highly recommended.”</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-1.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-1.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Alina Parker</h5>
                                     <p class="text-size-16 mb-0">CEO, Global Tech</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -539,14 +546,14 @@
                                 seamless. Thank you for the expert guidance and smooth execution!</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-2.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-2.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Kevin Andrew</h5>
                                     <p class="text-size-16 mb-0">Company Manager</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -564,14 +571,14 @@
                                 full of valuable insights for designers. Highly recommended.”</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-1.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-1.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Alina Parker</h5>
                                     <p class="text-size-16 mb-0">CEO, Global Tech</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -589,14 +596,14 @@
                                 seamless. Thank you for the expert guidance and smooth execution!</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-2.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-2.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Kevin Andrew</h5>
                                     <p class="text-size-16 mb-0">Company Manager</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -614,14 +621,14 @@
                                 full of valuable insights for designers. Highly recommended.”</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-1.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-1.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Alina Parker</h5>
                                     <p class="text-size-16 mb-0">CEO, Global Tech</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -639,14 +646,14 @@
                                 seamless. Thank you for the expert guidance and smooth execution!”</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-2.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-2.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Kevin Andrew</h5>
                                     <p class="text-size-16 mb-0">Company Manager</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -664,14 +671,14 @@
                                 full of valuable insights for designers. Highly recommended.”</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-1.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-1.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Alina Parker</h5>
                                     <p class="text-size-16 mb-0">CEO, Global Tech</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -689,14 +696,14 @@
                                 seamless. Thank you for the expert guidance and smooth execution!</p>
                             <div class="info position-relative float-left w-100">
                                 <figure class="user-img mb-0">
-                                    <img class="img-fluid" src="assets/images/testimonial-box-user-img-2.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/testimonial-box-user-img-2.png" alt="">
                                 </figure>
                                 <div class="designation-outer">
                                     <h5 class="mb-0">Kevin Andrew</h5>
                                     <p class="text-size-16 mb-0">Company Manager</p>
                                 </div>
                                 <figure class="quote-img position-absolute mb-0">
-                                    <img class="img-fluid" src="assets/images/quote-img.png" alt="">
+                                    <img class="img-fluid" loading="lazy" src="assets/images/quote-img.png" alt="">
                                 </figure>
                             </div>
                         </div>
@@ -712,19 +719,19 @@
                 <div class="col-xl-7 col-lg-7 col-md-6 col-12 order-md-1 order-2">
                     <div class="contact-images position-relative">
                         <figure class="shape-2 position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/banner-shape-img-2.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/banner-shape-img-2.png" alt="">
                         </figure>
                         <figure class="circle position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/blue-dot.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/blue-dot.png" alt="">
                         </figure>
                         <figure class="contact-img position-relative mb-0">
-                            <img class="img-fluid" src="assets/images/contact-section-img.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/contact-section-img.png" alt="">
                         </figure>
                         <figure class="contact-img-background position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/contact-section-background-shape.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/contact-section-background-shape.png" alt="">
                         </figure>
                         <figure class="shape-1 position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/create-section-shape-1.png" alt="">
+                            <img class="img-fluid" loading="lazy" src="assets/images/create-section-shape-1.png" alt="">
                         </figure>
                     </div>
                 </div>
@@ -760,10 +767,10 @@
     <!-- FOOTER -->
     <section class="footer-section position-relative">
         <figure class="section-left-shape position-absolute mb-0 shape2">
-            <img class="img-fluid" src="assets/images/footer-shape-1.png" alt="">
+            <img class="img-fluid" loading="lazy" src="assets/images/footer-shape-1.png" alt="">
         </figure>
         <figure class="section-right-shape position-absolute mb-0">
-            <img class="img-fluid" src="assets/images/footer-shape-2.png" alt="">
+            <img class="img-fluid" loading="lazy" src="assets/images/footer-shape-2.png" alt="">
         </figure>
         <div class="container">
             <div class="row">
@@ -829,7 +836,20 @@
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/custom-carousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/animation.js"></script>
+    <script>
+        // Video Popup
+        $(document).ready(function() {
+            $('.popup-vimeo').magnificPopup({
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false
+            });
+        });
+    </script>
     <script src="assets/js/scroll-buttons.js"></script>
     <script src="assets/js/formsubmit-handler.js"></script>
 </body>
