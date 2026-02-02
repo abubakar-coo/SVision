@@ -1,0 +1,29 @@
+TEAM MEMBERS IMAGE FILES INFORMATION
+=====================================
+
+Aap ko yeh 7 images ko "assets/images/" folder mein rakhna hai:
+
+1. shifa-seher.jpg          - Shifa Seher (CEO)
+2. farhan-ul-haq.jpg        - Farhan ul haq (CMO)
+3. abubakar-arif.jpg        - Abubakar Arif (Web Developer)
+4. malik-moeen.jpg          - Malik Moeen (SEO Specialist)
+5. shehzara-amir.jpg        - Shehzara Amir (Video Editor)
+6. saba-ashfaq-awan.jpg    - Saba Ashfaq Awan (Graphic Designer)
+7. sarah-watson.jpg         - Sarah Watson (Content Creator)
+
+IMPORTANT:
+- Images ka format JPG hona chahiye
+- File names exactly yahi honi chahiye (case-sensitive, lowercase with hyphens)
+- Images ko "assets/images/" folder mein rakhein
+- Currently images empty/placeholder hain, aap apni images add kar sakte hain
+
+TEAM MEMBERS LIST:
+==================
+1. Shifa Seher - CEO
+2. Farhan ul haq - CMO
+3. Abubakar Arif - Web Developer
+4. Malik Moeen - SEO Specialist
+5. Shehzara Amir - Video Editor
+6. Saba Ashfaq Awan - Graphic Designer
+7. Sarah Watson - Content Creator
+

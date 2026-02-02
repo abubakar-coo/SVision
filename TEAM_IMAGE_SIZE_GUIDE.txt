@@ -1,0 +1,71 @@
+TEAM MEMBERS IMAGE SIZE GUIDE
+=============================
+
+CSS mein images responsive hain aur automatically container ke size ke according adjust hoti hain.
+
+RECOMMENDED IMAGE SIZES:
+========================
+
+Option 1 (Square Format - Recommended):
+-----------------------------------------
+Size: 500 x 500 pixels (1:1 ratio)
+Format: JPG
+Quality: High (80-90% quality)
+File Size: 100-200 KB per image
+
+Option 2 (Portrait Format):
+----------------------------
+Size: 500 x 600 pixels (5:6 ratio)
+Format: JPG
+Quality: High (80-90% quality)
+File Size: 100-200 KB per image
+
+Option 3 (Standard Portrait):
+------------------------------
+Size: 400 x 500 pixels (4:5 ratio)
+Format: JPG
+Quality: High (80-90% quality)
+File Size: 80-150 KB per image
+
+IMPORTANT NOTES:
+================
+1. Sab images ka SAME SIZE hona chahiye (same width aur same height)
+2. Square format (500x500) sabse best hai kyunke consistent dikhta hai
+3. Images ko crop karke center mein focus rakhein (face centered)
+4. Background simple rakhein ya transparent
+5. High resolution use karein (minimum 500px width/height)
+6. File size optimize karein (100-200KB) - fast loading ke liye
+
+CSS BEHAVIOR:
+=============
+- Images automatically responsive hain (width: 100%)
+- Container size: col-lg-4 = 33.33% width on large screens
+- Images hover par zoom hoti hain (scale 1.1)
+- Height automatically adjust hoti hai (height: auto)
+
+RECOMMENDED SETTINGS FOR ALL 7 IMAGES:
+========================================
+✓ Size: 500 x 500 pixels (Square)
+✓ Format: JPG
+✓ Quality: 85%
+✓ Aspect Ratio: 1:1 (Square)
+✓ File Size: ~150 KB each
+✓ Resolution: 72-96 DPI (web use)
+
+IMAGE FILE NAMES:
+=================
+1. shifa-seher.jpg          (500x500px)
+2. farhan-ul-haq.jpg        (500x500px)
+3. abubakar-arif.jpg        (500x500px)
+4. malik-moeen.jpg          (500x500px)
+5. shehzara-amir.jpg        (500x500px)
+6. saba-ashfaq-awan.jpg     (500x500px)
+7. sarah-watson.jpg         (500x500px)
+
+TIPS:
+=====
+- Photoshop/GIMP mein sab images ko same size mein crop karein
+- Face detection use karein taake sab images mein face center mein ho
+- Batch processing use karein taake sab images ek saath resize ho jayein
+- Compression tool use karein (TinyPNG, ImageOptim) file size optimize karne ke liye
+
