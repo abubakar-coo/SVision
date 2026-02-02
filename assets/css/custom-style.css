@@ -1724,3 +1724,91 @@ body {
 .accordian-section .accordion-card button.btn.btn-link {
 	color: #c6c5c2 !important;
 }
+
+/* ============================================
+   FAST TEXT ANIMATIONS
+   ============================================ */
+
+/* Fast fade-in animation for text */
+@keyframes fastFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Fast slide-in from left */
+@keyframes fastSlideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Fast slide-in from right */
+@keyframes fastSlideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Faster AOS animations */
+[data-aos] {
+	transition-duration: 0.4s !important;
+	transition-timing-function: ease-out !important;
+}
+
+[data-aos="fade-up"] {
+	transition: opacity 0.4s ease-out, transform 0.4s ease-out !important;
+}
+
+[data-aos="fade-right"] {
+	transition: opacity 0.4s ease-out, transform 0.4s ease-out !important;
+}
+
+[data-aos="fade-left"] {
+	transition: opacity 0.4s ease-out, transform 0.4s ease-out !important;
+}
+
+/* Show text immediately on load with fast animation */
+body.loaded h1,
+body.loaded h2,
+body.loaded h3,
+body.loaded h4,
+body.loaded h5,
+body.loaded h6,
+body.loaded .heading,
+body.loaded .heading h1,
+body.loaded .heading h2,
+body.loaded .heading h3,
+body.loaded .heading h4,
+body.loaded .heading h5,
+body.loaded .heading h6,
+body.loaded .heading p,
+body.loaded .home-banner-text,
+body.loaded .text-size-16 {
+	opacity: 1 !important;
+	animation: fastFadeIn 0.3s ease-out forwards;
+}
+
+/* Optimize text rendering for faster display */
+h1, h2, h3, h4, h5, h6,
+.heading, p, .text-size-16 {
+	will-change: transform, opacity;
+	transform: translateZ(0);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

@@ -862,6 +862,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/animation.js"></script>
     <script>
+        // Fast text loading and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add loaded class to body for animations
+            document.body.classList.add('loaded');
+            
+            // Fast AOS refresh
+            if (typeof AOS !== 'undefined') {
+                AOS.refresh();
+            }
+            
+            // Animate text elements immediately
+            const textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, .heading');
+            textElements.forEach(function(el, index) {
+                setTimeout(function() {
+                    el.style.opacity = '1';
+                    el.style.animation = 'fastFadeIn 0.3s ease-out forwards';
+                }, index * 20); // Stagger animation slightly
+            });
+        });
+        
         // Video Popup
         $(document).ready(function() {
             $('.popup-vimeo').magnificPopup({
