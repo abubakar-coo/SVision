@@ -3,7 +3,33 @@
 	color: #8ca6a2 !important;
 }
 
+/* Hero section: paragraph below main headline (all pages - Home, About, Services, Contact, FAQ) */
+.home-banner-text p,
+.contact_banner .home-banner-text p,
+.about_banner .home-banner-text p,
+.services2_banner .home-banner-text p,
+.faq_banner .home-banner-text p {
+	color: #e5faff !important;
+}
 
+/* Team section: rounded corners on picture frame + smooth zoom on hover */
+.team-section .team-box .img-outer,
+.team-section .team-box .img-outer figure img {
+	border-radius: 12px;
+}
+.team-section .team-box .img-outer figure img {
+	transition: transform 0.35s ease, filter 0.35s ease;
+}
+.team-section .team-box:hover figure img {
+	filter: none !important;
+	transform: scale(1.06);
+	transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Team member name hover color */
+.team-section .team-box:hover h4 {
+	color: #c6c5c2 !important;
+}
 
 /**************************************************
 =-*=-*=-*=-*=-*=-*= Single Post =-*=-*=-*=-*=-*=-*=
@@ -998,8 +1024,24 @@ a.item-link {
 	color: #C9c8c5 !important;
 }
 
-.navbar .nav-item.active .nav-link {
-	color: #c6c5c2 !important;
+/* Navbar: current page / section title link color */
+.navbar .nav-item.active .nav-link,
+.navbar-nav li.active > a {
+	color: #e5faff !important;
+}
+
+/* Breadcrumb (Home → About/Services/Faq's/Contact): page name in black */
+.home-banner-text .btn_wrapper .sub_span,
+.contact_banner .home-banner-text .btn_wrapper .sub_span,
+.about_banner .home-banner-text .btn_wrapper .sub_span,
+.services2_banner .home-banner-text .btn_wrapper .sub_span,
+.faq_banner .home-banner-text .btn_wrapper .sub_span {
+	color: #000000 !important;
+}
+
+/* Contact page – Our Information cards hover color */
+.contact_info_section .choose-box:hover {
+	background-color: #809995 !important;
 }
 
 /* Ensure no underline appears on navbar links or contact button on hover */
@@ -1524,6 +1566,12 @@ strong {
 	.team-section .team-box figure img {
 		width: 100%;
 		height: auto;
+	}
+	
+	/* Team: same hover animation on mobile */
+	.team-section .team-box:hover figure img {
+		filter: none !important;
+		transform: scale(1.06);
 	}
 	
 	/* Testimonials Section */
