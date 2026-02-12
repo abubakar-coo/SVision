@@ -1044,6 +1044,18 @@ a.item-link {
 	background-color: #809995 !important;
 }
 
+/* Hero section: remove margin + choti width (90%) - no cut left/right (all pages) */
+.home-banner-section .banner-img img,
+.contact_banner .banner-img img,
+.faq_banner .banner-img img,
+.services2_banner .banner-img img,
+.about_banner .banner-img img {
+	margin-right: 0 !important;
+}
+.banner-img-content .banner-img img {
+	margin-right: 0 !important;
+}
+
 /* Section below hero (Why Choose Us / images): rounded corners */
 .choose-section .choose-box {
 	border-radius: 16px;
@@ -1307,12 +1319,12 @@ strong {
 		display: none !important;
 	}
 	
-	/* Banner Images - mobile/tablet: 500px × 750px */
+	/* Banner Images - mobile/tablet: 90% width (choti image, dono sides space - no cut) */
 	.banner-img-content {
 		display: block !important;
 		position: relative !important;
-		max-width: 500px;
-		width: 100%;
+		max-width: 90%;
+		width: 90%;
 		height: 750px;
 		margin-top: 10px;
 		margin-left: auto;
@@ -1360,7 +1372,7 @@ strong {
 	
 	.banner-img-content .banner-img img {
 		width: 100% !important;
-		max-width: 500px !important;
+		max-width: 100% !important;
 		height: 750px !important;
 		object-fit: cover !important;
 		border-radius: 10px;
@@ -1394,8 +1406,8 @@ strong {
 	}
 	
 	.contact_banner .banner-img-content {
-		max-width: 500px;
-		width: 100%;
+		max-width: 90%;
+		width: 90%;
 		height: 750px;
 		margin-top: 10px;
 		margin-left: auto;
@@ -1404,7 +1416,7 @@ strong {
 	
 	.contact_banner .banner-img-content .banner-img img {
 		width: 100% !important;
-		max-width: 500px !important;
+		max-width: 100% !important;
 		height: 750px !important;
 		object-fit: cover !important;
 	}
@@ -1491,7 +1503,7 @@ strong {
 	
 	.create-section .create-img-1 img {
 		width: 100% !important;
-		max-width: 300px !important;
+		max-width: 700px !important;
 		margin: 0 auto;
 	}
 	
