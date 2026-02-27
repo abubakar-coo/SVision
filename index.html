@@ -515,6 +515,34 @@
                         <p class="text-size-16">Content Creator</p>
                     </div>
                 </div>
+                <!-- 8. Ads Manager -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-4">
+                    <div class="team-box">
+                        <div class="wrapper position-relative">
+                            <div class="img-outer">
+                                <figure class="mb-0">
+                                    <img class="img-fluid" loading="lazy" src="https://ui-avatars.com/api/?name=Zeeshan&size=400&background=7c928e&color=fff" alt="Zeeshan">
+                                </figure>
+                            </div>
+                        </div>
+                        <h4>Zeeshan</h4>
+                        <p class="text-size-16">Ads Manager</p>
+                    </div>
+                </div>
+                <!-- 9. Marketing Manager -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-12 mb-lg-0 mb-md-0 mb-4">
+                    <div class="team-box">
+                        <div class="wrapper position-relative">
+                            <div class="img-outer">
+                                <figure class="mb-0">
+                                    <img class="img-fluid" loading="lazy" src="https://ui-avatars.com/api/?name=Tayyaba+Ashab&size=400&background=7c928e&color=fff" alt="Tayyaba Ashab">
+                                </figure>
+                            </div>
+                        </div>
+                        <h4>Tayyaba Ashab</h4>
+                        <p class="text-size-16">Marketing Manager</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -761,7 +789,7 @@
                 <div class="col-xl-5 col-lg-5 col-md-6 col-12 mb-md-0 mb-5 order-md-2 order-1">
                     <div class="heading">
                         <h6>Get in touch</h6>
-                        <h2>Get a Free Consultation Now</h2>
+                        <h2>Get a Free quote and Consultation Now</h2>
                         <form action="https://formsubmit.co/svision.officialinfo@gmail.com" method="POST" data-formsubmit="true"
                             data-form-name="Home Consultation">
                             <input type="hidden" name="_subject" value="New Home Consultation Inquiry - SVision">
@@ -862,32 +890,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/animation.js"></script>
     <script>
-        // Fast text loading and animations
+        // Fast load: show content immediately, minimal animation
         document.addEventListener('DOMContentLoaded', function() {
-            // Add loaded class to body for animations
             document.body.classList.add('loaded');
-            
-            // Fast AOS refresh
-            if (typeof AOS !== 'undefined') {
-                AOS.refresh();
-            }
-            
-            // Animate text elements immediately
-            const textElements = document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, .heading');
-            textElements.forEach(function(el, index) {
-                setTimeout(function() {
-                    el.style.opacity = '1';
-                    el.style.animation = 'fastFadeIn 0.3s ease-out forwards';
-                }, index * 20); // Stagger animation slightly
+            if (typeof AOS !== 'undefined') AOS.refresh();
+            document.querySelectorAll('h1, h2, h3, h4, h5, h6, p, .heading').forEach(function(el) {
+                el.style.opacity = '1';
             });
         });
         
-        // Video Popup
         $(document).ready(function() {
             $('.popup-vimeo').magnificPopup({
                 type: 'iframe',
                 mainClass: 'mfp-fade',
-                removalDelay: 160,
+                removalDelay: 100,
                 preloader: false,
                 fixedContentPos: false
             });

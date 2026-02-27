@@ -1,29 +1,35 @@
 TEAM MEMBERS IMAGE FILES INFORMATION
 =====================================
 
-Aap ko yeh 7 images ko "assets/images/" folder mein rakhna hai:
+Aap ko yeh images "assets/images/" folder mein rakhni hain:
 
-1. shifa-seher.jpg          - Shifa Seher (CEO)
-2. farhan-ul-haq.jpg        - Farhan ul haq (CMO)
-3. abubakar-arif.jpg        - Abubakar Arif (Web Developer)
-4. malik-moeen.jpg          - Malik Moeen (SEO Specialist)
-5. shehzara-amir.jpg        - Shehzara Amir (Video Editor)
-6. saba-ashfaq-awan.jpg    - Saba Ashfaq Awan (Graphic Designer)
+1. shifa-seher.jpg          - Shifa Seher (Chief Executive Officer)
+2. farhan-ul-haq.jpg        - Farhan ul haq (Operations Director)
+3. saba-ashfaq-awan.jpg     - Saba Ashfaq Awan (Brand Design Manager)
+4. abubakar-arif.jpg        - Abubakar Arif (Web Developer)
+5. malik-moeen.jpg          - Malik Moeen (SEO Specialist)
+6. shehzara-amir.jpg        - Shehzara Amir (Creative Video Specialist)
 7. sarah-watson.jpg         - Sarah Watson (Content Creator)
+8. zeeshan.jpg              - Zeeshan (Ads Manager)          ← NEW
+9. tayyaba-aziz.jpg         - Tayyaba Aziz (Marketing Manager) ← NEW
 
-IMPORTANT:
-- Images ka format JPG hona chahiye
-- File names exactly yahi honi chahiye (case-sensitive, lowercase with hyphens)
-- Images ko "assets/images/" folder mein rakhein
-- Currently images empty/placeholder hain, aap apni images add kar sakte hain
+NAYE MEMBERS KE IMAGE FILE NAMES (in dono ko add karein):
+---------------------------------------------------------
+  • zeeshan.jpg              → Zeeshan (Ads Manager)
+  • tayyaba-aziz.jpg         → Tayyaba Aziz (Marketing Manager)
 
-TEAM MEMBERS LIST:
-==================
-1. Shifa Seher - CEO
-2. Farhan ul haq - CMO
-3. Abubakar Arif - Web Developer
-4. Malik Moeen - SEO Specialist
-5. Shehzara Amir - Video Editor
-6. Saba Ashfaq Awan - Graphic Designer
+Location:  assets/images/
+Format:    JPG
+Names:     lowercase, hyphens (exactly as above)
+
+TEAM MEMBERS LIST (current order):
+==================================
+1. Shifa Seher - Chief Executive Officer
+2. Farhan ul haq - Operations Director
+3. Saba Ashfaq Awan - Brand Design Manager
+4. Abubakar Arif - Web Developer
+5. Malik Moeen - SEO Specialist
+6. Shehzara Amir - Creative Video Specialist
 7. Sarah Watson - Content Creator
-
+8. Zeeshan - Ads Manager
+9. Tayyaba Aziz - Marketing Manager
